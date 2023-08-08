@@ -5,6 +5,9 @@ leftY = 0;
 rightX = 0;
 rightY = 0;
 status2 = "";
+status1 = "";
+scoreLeftWrist = 0;
+
 function preload(){
     disney = loadSound("Disney_music.mp3");
     peter_pan = loadSound("peter_pan.mp3");
@@ -36,10 +39,10 @@ function draw(){
     if(scoreLeftWrist > 0.2){
         circle(leftX, leftY, 20);
         
-        status2.stop();
-    if(status1 = false){
-        status1.play();
-        document.getElementById("song").innerHTML = "Disney";
+        peter_pan.stop();
+    if(status1 == false){
+        disney.play();
+        document.getElementById("song").innerHTML = "Playing Disney";
     }
      }
 }
